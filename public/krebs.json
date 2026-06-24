@@ -1,0 +1,102 @@
+[
+  {
+    "id": "george",
+    "data": { "first name": "George Allan", "last name": "Krebs", "gender": "M" },
+    "rels": { "spouses": ["alice"], "children": ["allan", "denis", "bill"] }
+  },
+  {
+    "id": "alice",
+    "data": { "first name": "Alice Marion", "last name": "Krebs", "gender": "F" },
+    "rels": { "spouses": ["george"], "children": ["allan", "denis", "bill"] }
+  },
+  {
+    "id": "allan",
+    "data": { "first name": "Allan George", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["george", "alice"], "spouses": ["ursula"], "children": ["ashton", "madison"] }
+  },
+  {
+    "id": "ursula",
+    "data": { "first name": "Ursula", "last name": "Krebs", "gender": "F" },
+    "rels": { "spouses": ["allan"], "children": ["ashton", "madison"] }
+  },
+  {
+    "id": "ashton",
+    "data": { "first name": "Ashton", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["allan", "ursula"] }
+  },
+  {
+    "id": "madison",
+    "data": { "first name": "Madison", "last name": "Krebs", "gender": "F" },
+    "rels": { "parents": ["allan", "ursula"], "spouses": ["ellery"] }
+  },
+  {
+    "id": "ellery",
+    "data": { "first name": "Ellery", "last name": "Nagle", "gender": "M" },
+    "rels": { "spouses": ["madison"] }
+  },
+  {
+    "id": "denis",
+    "data": { "first name": "Denis James", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["george", "alice"], "spouses": ["sherry"], "children": ["brian"] }
+  },
+  {
+    "id": "sherry",
+    "data": { "first name": "Sherry", "last name": "Krebs", "gender": "F" },
+    "rels": { "spouses": ["denis"], "children": ["brian"] }
+  },
+  {
+    "id": "brian",
+    "data": { "first name": "Brian James", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["denis", "sherry"], "spouses": ["gretchen"], "children": ["lauren", "chloe"] }
+  },
+  {
+    "id": "gretchen",
+    "data": { "first name": "Gretchen", "last name": "Krebs", "gender": "F" },
+    "rels": { "spouses": ["brian"], "children": ["lauren", "chloe"] }
+  },
+  {
+    "id": "lauren",
+    "data": { "first name": "Lauren", "last name": "Krebs", "gender": "F" },
+    "rels": { "parents": ["brian", "gretchen"] }
+  },
+  {
+    "id": "chloe",
+    "data": { "first name": "Chloe", "last name": "Krebs", "gender": "F" },
+    "rels": { "parents": ["brian", "gretchen"] }
+  },
+  {
+    "id": "bill",
+    "data": { "first name": "William \"Bill\" Christopher", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["george", "alice"], "spouses": ["dayna"], "children": ["tyler", "cassidy"] }
+  },
+  {
+    "id": "dayna",
+    "data": { "first name": "Dayna Lynn", "last name": "Krebs", "gender": "F" },
+    "rels": { "spouses": ["bill"], "children": ["tyler", "cassidy"] }
+  },
+  {
+    "id": "tyler",
+    "data": { "first name": "Tyler Windsor", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["bill", "dayna"], "spouses": ["arrianne"], "children": ["henry", "jack"] }
+  },
+  {
+    "id": "arrianne",
+    "data": { "first name": "Arrianne Nicole", "last name": "Sandera", "gender": "F" },
+    "rels": { "spouses": ["tyler"], "children": ["henry", "jack"] }
+  },
+  {
+    "id": "henry",
+    "data": { "first name": "Henry George", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["tyler", "arrianne"] }
+  },
+  {
+    "id": "jack",
+    "data": { "first name": "Jack Windsor", "last name": "Krebs", "gender": "M" },
+    "rels": { "parents": ["tyler", "arrianne"] }
+  },
+  {
+    "id": "cassidy",
+    "data": { "first name": "Cassidy Amanda", "last name": "Krebs", "gender": "F" },
+    "rels": { "parents": ["bill", "dayna"] }
+  }
+]
