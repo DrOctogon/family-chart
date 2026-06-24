@@ -13,10 +13,22 @@
 import f3 from './src/index.ts'
 import './src/styles/family-chart.css'
 
-fetch('/krebs.json')
+fetch('/gramps.json')
   .then(res => res.json())
   .then(data => create(data))
   .catch(err => console.error(err))
+
+function fullName(d) {
+  return `${d.data["first name"]} ${d.data["last name"]}`.trim()
+}
+
+function lifespan(d) {
+  const b = d.data["birthday"] || ''
+  const dt = d.data["death"] || ''
+  if (b && dt) return `${b} – ${dt}`
+  if (dt) return `– ${dt}`
+  return b
+}
 
 function create(data) {
   const f3Chart = f3.createChart('#FamilyChart', data)
@@ -27,22 +39,19 @@ function create(data) {
     .setOrientationVertical()
 
   f3Chart.setCard(f3.cardHtml)
-    .setCardDisplay([
-      d => `${d.data["first name"]} ${d.data["last name"]}`,
-      d => d.data["birthday"] || ''
-    ])
+    .setCardDisplay([fullName, lifespan])
     .setMiniTree(true)
     .setStyle('imageRect')
     .setOnHoverPathToMain()
 
   f3Chart.editTree()
-    .setFields(["first name", "last name", "birthday", "avatar"])
+    .setFields(["first name", "last name", "birthday", "death", "avatar"])
     .setEditFirst(true)
 
-  f3Chart.setPersonDropdown(d => `${d.data["first name"]} ${d.data["last name"]}`)
+  f3Chart.setPersonDropdown(fullName)
 
-  // start on root ancestor so the entire family renders
-  f3Chart.updateMainId('george')
+  // root on George Allan Krebs so the full descendant tree renders
+  f3Chart.updateMainId('i0001')
   f3Chart.updateTree({ initial: true })
 }
 </script>
