@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Krebs Family Tree (Gramps)</title>
+  <link rel="shortcut icon" type="image/svg" href="/logo.svg">
+  <link rel="stylesheet" href="/src/styles/family-chart.css">
+  <style> body { font-family: 'Arial', sans-serif; margin: 0; } </style>
+</head>
+<body>
+<div id="FamilyChart" class="f3" style="width:100%;height:100vh;margin:auto;background-color:rgb(33,33,33);color:#fff;"></div>
+<script type="module">
+import f3 from '../../src/index.js'
+
+fetch('/gramps.json')
+  .then(res => res.json())
+  .then(data => create(data))
+  .catch(err => console.error(err))
+
+function fullName(d) {
+  return `${d.data["first name"]} ${d.data["last name"]}`.trim()
+}
+
+function lifespan(d) {
+  const b = d.data["birthday"] || ''
+  const dt = d.data["death"] || ''
+  if (b && dt) return `${b} – ${dt}`
+  if (dt) return `– ${dt}`
+  return b
+}
+
+function create(data) {
+  const f3Chart = f3.createChart('#FamilyChart', data)
+    .setTransitionTime(800)
+    .setCardYSpacing(150)
+    .setCardXSpacing(250)
+    .setShowSiblingsOfMain(true)
+    .setOrientationVertical()
+
+  f3Chart.setCard(f3.cardHtml)
+    .setCardDisplay([fullName, lifespan])
+    .setMiniTree(true)
+    .setStyle('imageRect')
+    .setOnHoverPathToMain()
+
+  f3Chart.editTree()
+    .setFields(["first name", "last name", "birthday", "death", "avatar"])
+    .setEditFirst(true)
+
+  f3Chart.setPersonDropdown(fullName)
+
+  // root on George Allan Krebs so the full descendant tree renders
+  f3Chart.updateMainId('i0001')
+  f3Chart.updateTree({ initial: true })
+}
+</script>
+</body>
+</html>
