@@ -6,3 +6,4 @@
 cypress/screenshots
 docs/api
 .vercel
+.DS_Store
