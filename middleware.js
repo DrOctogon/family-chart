@@ -9,17 +9,26 @@
 // on/off without re-entering it.
 //
 // Set both in Vercel: Settings -> Environment Variables, then redeploy.
-// Login user is "family"; password is SITE_PASSWORD.
+// The browser still shows a username box (Basic Auth always does), but the
+// username is ignored -- only the password (SITE_PASSWORD) is checked, so you
+// can leave the username blank.
 export default function middleware(req) {
   // Protection off -> let every request through.
   if (process.env.AUTH_ENABLED !== 'true') return
 
   const password = process.env.SITE_PASSWORD
-  const auth = req.headers.get('authorization')
-  const expected = password ? 'Basic ' + btoa('family:' + password) : null
+  const auth = req.headers.get('authorization') || ''
 
-  // Fail closed: protection on but no password configured -> deny everything.
-  if (!expected || auth !== expected) {
+  // Decode "Basic base64(user:pass)" and compare the password part only.
+  let ok = false
+  if (password && auth.startsWith('Basic ')) {
+    const decoded = atob(auth.slice(6))
+    const supplied = decoded.slice(decoded.indexOf(':') + 1)
+    ok = supplied === password
+  }
+
+  // Fail closed: protection on but no/incorrect password -> deny.
+  if (!ok) {
     return new Response('Authentication required', {
       status: 401,
       headers: { 'WWW-Authenticate': 'Basic realm="Krebs Family Tree"' },
