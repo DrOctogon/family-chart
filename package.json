@@ -42,7 +42,6 @@
   ],
   "scripts": {
     "build": "node build.js",
-    "data": "python3 scripts/gramps_json_to_f3.py family-tree.json public/gramps.json",
     "test": "cypress open",
     "test-run": "cypress run",
     "dev": "vite",

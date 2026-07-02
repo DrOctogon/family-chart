@@ -1,72 +1,55 @@
 [
   {
-    "id": "i0000",
+    "id": "i0016",
     "data": {
-      "first name": "Brian James",
-      "last name": "Krebs",
+      "first name": "Windsor",
+      "last name": "Bigelow",
       "gender": "M",
-      "birthday": "1980-07-13",
-      "death": ""
-    },
-    "rels": {
-      "parents": [
-        "i0004",
-        "i0024"
-      ],
-      "spouses": [
-        "i0026"
-      ],
-      "children": [
-        "i0021",
-        "i0022"
-      ]
-    }
-  },
-  {
-    "id": "i0001",
-    "data": {
-      "first name": "George Allan",
-      "last name": "Krebs",
-      "gender": "M",
-      "birthday": "1933-02-20",
+      "birthday": "",
       "death": ""
     },
     "rels": {
       "spouses": [
-        "i0002"
+        "i0017"
       ],
       "children": [
-        "i0004",
-        "i0005",
-        "i0003"
-      ],
-      "parents": [
-        "i0038",
-        "i0039"
+        "i0010"
       ]
     }
   },
   {
-    "id": "i0002",
+    "id": "i0027",
     "data": {
-      "first name": "Alice Marion",
-      "last name": "McHam",
+      "first name": "Red",
+      "last name": "Bowers",
+      "gender": "M",
+      "birthday": "",
+      "death": ""
+    },
+    "rels": {
+      "spouses": [
+        "i0020"
+      ],
+      "children": [
+        "i0017"
+      ]
+    }
+  },
+  {
+    "id": "i0020",
+    "data": {
+      "first name": "Viginia",
+      "last name": "Bowers",
       "gender": "F",
-      "birthday": "1935-02-28",
-      "death": "2025-11-20"
+      "birthday": "1927",
+      "death": "1996"
     },
     "rels": {
       "spouses": [
-        "i0001"
+        "i0027"
       ],
       "children": [
-        "i0004",
-        "i0005",
-        "i0003"
-      ],
-      "parents": [
-        "i0011",
-        "i0012"
+        "i0017"
       ]
     }
   },
@@ -80,100 +63,16 @@
       "death": ""
     },
     "rels": {
+      "spouses": [
+        "i0023"
+      ],
       "parents": [
         "i0001",
         "i0002"
-      ],
-      "spouses": [
-        "i0023"
       ],
       "children": [
         "i0008",
         "i0009"
-      ]
-    }
-  },
-  {
-    "id": "i0004",
-    "data": {
-      "first name": "Dennis James",
-      "last name": "Krebs",
-      "gender": "M",
-      "birthday": "1955-04-06",
-      "death": "2022"
-    },
-    "rels": {
-      "parents": [
-        "i0001",
-        "i0002"
-      ],
-      "spouses": [
-        "i0024"
-      ],
-      "children": [
-        "i0000"
-      ]
-    }
-  },
-  {
-    "id": "i0005",
-    "data": {
-      "first name": "Willam Christopher",
-      "last name": "Krebs",
-      "gender": "M",
-      "birthday": "1957-02-13",
-      "death": ""
-    },
-    "rels": {
-      "spouses": [
-        "i0010"
-      ],
-      "children": [
-        "i0006",
-        "i0007"
-      ],
-      "parents": [
-        "i0001",
-        "i0002"
-      ]
-    }
-  },
-  {
-    "id": "i0006",
-    "data": {
-      "first name": "Tyler Windsor",
-      "last name": "Krebs",
-      "gender": "M",
-      "birthday": "1986-07-24",
-      "death": ""
-    },
-    "rels": {
-      "parents": [
-        "i0005",
-        "i0010"
-      ],
-      "spouses": [
-        "i0013"
-      ],
-      "children": [
-        "i0015",
-        "i0014"
-      ]
-    }
-  },
-  {
-    "id": "i0007",
-    "data": {
-      "first name": "Cassidy Amanda",
-      "last name": "Krebs",
-      "gender": "F",
-      "birthday": "1989-07-08",
-      "death": ""
-    },
-    "rels": {
-      "parents": [
-        "i0005",
-        "i0010"
       ]
     }
   },
@@ -194,18 +93,57 @@
     }
   },
   {
-    "id": "i0009",
+    "id": "i0000",
     "data": {
-      "first name": "Madison",
+      "first name": "Brian",
+      "last name": "Krebs",
+      "gender": "M",
+      "birthday": "1980-07-13",
+      "death": ""
+    },
+    "rels": {
+      "spouses": [
+        "i0026"
+      ],
+      "parents": [
+        "i0004",
+        "i0024"
+      ],
+      "children": [
+        "i0021",
+        "i0022"
+      ]
+    }
+  },
+  {
+    "id": "i0007",
+    "data": {
+      "first name": "Cassidy Amanda",
       "last name": "Krebs",
       "gender": "F",
-      "birthday": "1994-09-17",
+      "birthday": "1989-07-08",
       "death": ""
     },
     "rels": {
       "parents": [
-        "i0003",
-        "i0023"
+        "i0005",
+        "i0010"
+      ]
+    }
+  },
+  {
+    "id": "i0022",
+    "data": {
+      "first name": "Chloe",
+      "last name": "Krebs",
+      "gender": "F",
+      "birthday": "2016-08-03",
+      "death": ""
+    },
+    "rels": {
+      "parents": [
+        "i0000",
+        "i0026"
       ]
     }
   },
@@ -233,67 +171,63 @@
     }
   },
   {
-    "id": "i0011",
+    "id": "i0004",
     "data": {
-      "first name": "Jessie",
-      "last name": "McHam",
+      "first name": "Dennis James",
+      "last name": "Krebs",
       "gender": "M",
-      "birthday": "",
-      "death": "1998"
+      "birthday": "1955-04-06",
+      "death": "2022"
     },
     "rels": {
       "spouses": [
-        "i0012"
+        "i0024"
+      ],
+      "parents": [
+        "i0001",
+        "i0002"
       ],
       "children": [
-        "i0041",
-        "i0002",
-        "i0040",
-        "i0028"
+        "i0000"
       ]
     }
   },
   {
-    "id": "i0012",
+    "id": "i0001",
     "data": {
-      "first name": "Marion",
-      "last name": "McHam",
-      "gender": "F",
-      "birthday": "",
-      "death": "2003-12"
-    },
-    "rels": {
-      "spouses": [
-        "i0011"
-      ],
-      "children": [
-        "i0041",
-        "i0002",
-        "i0040",
-        "i0028"
-      ]
-    }
-  },
-  {
-    "id": "i0013",
-    "data": {
-      "first name": "Arrianne Nicole",
-      "last name": "Sandera",
-      "gender": "F",
-      "birthday": "1985-01-26",
+      "first name": "George Allan",
+      "last name": "Krebs",
+      "gender": "M",
+      "birthday": "1933-02-20",
       "death": ""
     },
     "rels": {
       "spouses": [
-        "i0006"
+        "i0002"
       ],
       "children": [
-        "i0015",
-        "i0014"
+        "i0004",
+        "i0005",
+        "i0003"
+      ]
+    }
+  },
+  {
+    "id": "i0026",
+    "data": {
+      "first name": "Gretchen",
+      "last name": "Krebs",
+      "gender": "F",
+      "birthday": "1983-02-01",
+      "death": ""
+    },
+    "rels": {
+      "spouses": [
+        "i0000"
       ],
-      "parents": [
-        "i0025",
-        "i0018"
+      "children": [
+        "i0021",
+        "i0022"
       ]
     }
   },
@@ -330,93 +264,6 @@
     }
   },
   {
-    "id": "i0016",
-    "data": {
-      "first name": "Windsor",
-      "last name": "Bigelow",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {
-      "spouses": [
-        "i0017"
-      ],
-      "children": [
-        "i0010"
-      ]
-    }
-  },
-  {
-    "id": "i0017",
-    "data": {
-      "first name": "Robin",
-      "last name": "Sandow",
-      "gender": "F",
-      "birthday": "1938-05-24",
-      "death": ""
-    },
-    "rels": {
-      "spouses": [
-        "i0016"
-      ],
-      "children": [
-        "i0010"
-      ],
-      "parents": [
-        "i0027",
-        "i0020"
-      ]
-    }
-  },
-  {
-    "id": "i0018",
-    "data": {
-      "first name": "Lida",
-      "last name": "Sandera",
-      "gender": "F",
-      "birthday": "1944-04-23",
-      "death": ""
-    },
-    "rels": {
-      "spouses": [
-        "i0025"
-      ],
-      "children": [
-        "i0013"
-      ]
-    }
-  },
-  {
-    "id": "i0019",
-    "data": {
-      "first name": "Jack",
-      "last name": "Sandow",
-      "gender": "M",
-      "birthday": "1922-08-22",
-      "death": "2017-01-14"
-    },
-    "rels": {}
-  },
-  {
-    "id": "i0020",
-    "data": {
-      "first name": "Viginia",
-      "last name": "Bowers",
-      "gender": "F",
-      "birthday": "1927",
-      "death": "1996"
-    },
-    "rels": {
-      "spouses": [
-        "i0027"
-      ],
-      "children": [
-        "i0017"
-      ]
-    }
-  },
-  {
     "id": "i0021",
     "data": {
       "first name": "Lauren",
@@ -433,18 +280,142 @@
     }
   },
   {
-    "id": "i0022",
+    "id": "i0009",
     "data": {
-      "first name": "Chloe",
+      "first name": "Madison",
       "last name": "Krebs",
       "gender": "F",
-      "birthday": "2016-08-03",
+      "birthday": "1994-09-17",
       "death": ""
     },
     "rels": {
       "parents": [
-        "i0000",
-        "i0026"
+        "i0003",
+        "i0023"
+      ]
+    }
+  },
+  {
+    "id": "i0006",
+    "data": {
+      "first name": "Tyler Windsor",
+      "last name": "Krebs",
+      "gender": "M",
+      "birthday": "1986-07-24",
+      "death": ""
+    },
+    "rels": {
+      "spouses": [
+        "i0013"
+      ],
+      "parents": [
+        "i0005",
+        "i0010"
+      ],
+      "children": [
+        "i0015",
+        "i0014"
+      ]
+    }
+  },
+  {
+    "id": "i0005",
+    "data": {
+      "first name": "Willam Christopher",
+      "last name": "Krebs",
+      "gender": "M",
+      "birthday": "1957-02-13",
+      "death": ""
+    },
+    "rels": {
+      "spouses": [
+        "i0010"
+      ],
+      "children": [
+        "i0006",
+        "i0007"
+      ],
+      "parents": [
+        "i0001",
+        "i0002"
+      ]
+    }
+  },
+  {
+    "id": "i0002",
+    "data": {
+      "first name": "Alice Marion",
+      "last name": "McHam",
+      "gender": "F",
+      "birthday": "1935-02-28",
+      "death": "2025-11-20"
+    },
+    "rels": {
+      "spouses": [
+        "i0001"
+      ],
+      "children": [
+        "i0004",
+        "i0005",
+        "i0003"
+      ],
+      "parents": [
+        "i0011",
+        "i0012"
+      ]
+    }
+  },
+  {
+    "id": "i0011",
+    "data": {
+      "first name": "Jessie",
+      "last name": "McHam",
+      "gender": "M",
+      "birthday": "",
+      "death": "1998"
+    },
+    "rels": {
+      "spouses": [
+        "i0012"
+      ],
+      "children": [
+        "i0002",
+        "i0028"
+      ]
+    }
+  },
+  {
+    "id": "i0012",
+    "data": {
+      "first name": "Marion",
+      "last name": "McHam",
+      "gender": "F",
+      "birthday": "",
+      "death": "2003-12"
+    },
+    "rels": {
+      "spouses": [
+        "i0011"
+      ],
+      "children": [
+        "i0002",
+        "i0028"
+      ]
+    }
+  },
+  {
+    "id": "i0028",
+    "data": {
+      "first name": "Robert",
+      "last name": "McHam",
+      "gender": "M",
+      "birthday": "1933-09",
+      "death": ""
+    },
+    "rels": {
+      "parents": [
+        "i0011",
+        "i0012"
       ]
     }
   },
@@ -468,20 +439,25 @@
     }
   },
   {
-    "id": "i0024",
+    "id": "i0013",
     "data": {
-      "first name": "Sherry J",
-      "last name": "Unkown",
+      "first name": "Arrianne Nicole",
+      "last name": "Sandera",
       "gender": "F",
-      "birthday": "",
+      "birthday": "1985-01-26",
       "death": ""
     },
     "rels": {
       "spouses": [
-        "i0004"
+        "i0006"
       ],
       "children": [
-        "i0000"
+        "i0015",
+        "i0014"
+      ],
+      "parents": [
+        "i0025",
+        "i0018"
       ]
     }
   },
@@ -499,63 +475,25 @@
         "i0018"
       ],
       "children": [
-        "i0013",
-        "i0031",
-        "i0035",
-        "i0037"
+        "i0013"
       ]
     }
   },
   {
-    "id": "i0026",
+    "id": "i0018",
     "data": {
-      "first name": "Gretchen",
-      "last name": "Krebs",
+      "first name": "Lida",
+      "last name": "Sandera",
       "gender": "F",
-      "birthday": "1983-02-01",
+      "birthday": "1944-04-23",
       "death": ""
     },
     "rels": {
       "spouses": [
-        "i0000"
+        "i0025"
       ],
       "children": [
-        "i0021",
-        "i0022"
-      ]
-    }
-  },
-  {
-    "id": "i0027",
-    "data": {
-      "first name": "Red",
-      "last name": "Bowers",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {
-      "spouses": [
-        "i0020"
-      ],
-      "children": [
-        "i0017"
-      ]
-    }
-  },
-  {
-    "id": "i0028",
-    "data": {
-      "first name": "Robert",
-      "last name": "McHam",
-      "gender": "M",
-      "birthday": "1933-09",
-      "death": ""
-    },
-    "rels": {
-      "parents": [
-        "i0011",
-        "i0012"
+        "i0013"
       ]
     }
   },
@@ -568,7 +506,31 @@
       "birthday": "",
       "death": ""
     },
-    "rels": {}
+    "rels": {
+      "parents": [
+        "i0019",
+        "i0017"
+      ]
+    }
+  },
+  {
+    "id": "i0019",
+    "data": {
+      "first name": "Jack",
+      "last name": "Sandow",
+      "gender": "M",
+      "birthday": "1922-08-22",
+      "death": "2017-01-14"
+    },
+    "rels": {
+      "spouses": [
+        "i0017"
+      ],
+      "children": [
+        "i0029",
+        "i0030"
+      ]
+    }
   },
   {
     "id": "i0030",
@@ -579,226 +541,54 @@
       "birthday": "",
       "death": ""
     },
-    "rels": {}
-  },
-  {
-    "id": "i0031",
-    "data": {
-      "first name": "Rene",
-      "last name": "Sandera",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
     "rels": {
       "parents": [
-        "i0025"
+        "i0019",
+        "i0017"
       ]
     }
   },
   {
-    "id": "i0032",
+    "id": "i0017",
     "data": {
-      "first name": "Tanner",
-      "last name": "Sandera",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {}
-  },
-  {
-    "id": "i0033",
-    "data": {
-      "first name": "Chase",
-      "last name": "Sandera",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {}
-  },
-  {
-    "id": "i0034",
-    "data": {
-      "first name": "Allison",
-      "last name": "Sandera",
+      "first name": "Robin",
+      "last name": "Sandow",
       "gender": "F",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {}
-  },
-  {
-    "id": "i0035",
-    "data": {
-      "first name": "Karry?",
-      "last name": "Sandera",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {
-      "parents": [
-        "i0025"
-      ]
-    }
-  },
-  {
-    "id": "i0036",
-    "data": {
-      "first name": "Pat",
-      "last name": "Nesbit",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {}
-  },
-  {
-    "id": "i0037",
-    "data": {
-      "first name": "Chrisina",
-      "last name": "Sandera",
-      "gender": "F",
-      "birthday": "",
-      "death": "2024"
-    },
-    "rels": {
-      "parents": [
-        "i0025"
-      ]
-    }
-  },
-  {
-    "id": "i0038",
-    "data": {
-      "first name": "George Daniel",
-      "last name": "Krebs",
-      "gender": "M",
-      "birthday": "1901-08-17",
+      "birthday": "1938-05-24",
       "death": ""
     },
     "rels": {
       "spouses": [
-        "i0039"
+        "i0016",
+        "i0019"
       ],
       "children": [
-        "i0001"
-      ]
-    }
-  },
-  {
-    "id": "i0039",
-    "data": {
-      "first name": "Margarete Susanne",
-      "last name": "Krebs",
-      "gender": "F",
-      "birthday": "1985",
-      "death": "1975"
-    },
-    "rels": {
-      "spouses": [
-        "i0038"
+        "i0010",
+        "i0029",
+        "i0030"
       ],
-      "children": [
-        "i0001"
-      ]
-    }
-  },
-  {
-    "id": "i0040",
-    "data": {
-      "first name": "Jesse",
-      "last name": "McHam",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {
       "parents": [
-        "i0011",
-        "i0012"
+        "i0027",
+        "i0020"
       ]
     }
   },
   {
-    "id": "i0041",
+    "id": "i0024",
     "data": {
-      "first name": "William",
-      "last name": "McHam",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {
-      "parents": [
-        "i0011",
-        "i0012"
-      ]
-    }
-  },
-  {
-    "id": "i0042",
-    "data": {
-      "first name": "Geroge",
-      "last name": "Plock",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {
-      "spouses": [
-        "i0043"
-      ],
-      "children": [
-        "i0044"
-      ]
-    }
-  },
-  {
-    "id": "i0043",
-    "data": {
-      "first name": "Mary",
-      "last name": "Coster",
+      "first name": "Sherry J",
+      "last name": "Unkown",
       "gender": "F",
       "birthday": "",
       "death": ""
     },
     "rels": {
       "spouses": [
-        "i0042"
+        "i0004"
       ],
       "children": [
-        "i0044"
+        "i0000"
       ]
     }
-  },
-  {
-    "id": "i0044",
-    "data": {
-      "first name": "Marion",
-      "last name": "Baldwin",
-      "gender": "F",
-      "birthday": "1889-09-07",
-      "death": "1979-12-26"
-    },
-    "rels": {
-      "parents": [
-        "i0042",
-        "i0043"
-      ]
-    }
-  },
-  {
-    "id": "i0045",
-    "data": {
-      "first name": "Patrick",
-      "last name": "Nesbit",
-      "gender": "M",
-      "birthday": "",
-      "death": ""
-    },
-    "rels": {}
   }
 ]
