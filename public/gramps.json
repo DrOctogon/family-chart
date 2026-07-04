@@ -209,6 +209,10 @@
         "i0004",
         "i0005",
         "i0003"
+      ],
+      "parents": [
+        "i0031",
+        "i0032"
       ]
     }
   },
@@ -588,6 +592,42 @@
       ],
       "children": [
         "i0000"
+      ]
+    }
+  },
+  {
+    "id": "i0031",
+    "data": {
+      "first name": "George Daniel",
+      "last name": "Krebs",
+      "gender": "M",
+      "birthday": "1901-08-17",
+      "death": ""
+    },
+    "rels": {
+      "spouses": [
+        "i0032"
+      ],
+      "children": [
+        "i0001"
+      ]
+    }
+  },
+  {
+    "id": "i0032",
+    "data": {
+      "first name": "Margarette Susanne",
+      "last name": "Krebs",
+      "gender": "F",
+      "birthday": "",
+      "death": ""
+    },
+    "rels": {
+      "spouses": [
+        "i0031"
+      ],
+      "children": [
+        "i0001"
       ]
     }
   }
